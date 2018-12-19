@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar color = "primary">
+    <ion-title>
+      Facebook Feed
+    </ion-title>
+    <ion-searchbar animated [(ngModel)]="keyword" (ngModelChange)="onKeyworkChange($event)"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content color ="red">
+    <ion-card class="welcome-card" color ="secondary">
+        <ion-card-header>
+          <ion-card-subtitle>Aran Perkins</ion-card-subtitle>
+          <ion-card-title>Welcome to Ionic</ion-card-title>
+        </ion-card-header>
+        <ion-img src='https://fortunedotcom.files.wordpress.com/2018/05/facebook-fortune-500.jpg?size=full'></ion-img>
+        <ion-card-content>
+          <p>This is raddit</p>
+        </ion-card-content>
+      </ion-card>
+      <ion-card class="welcome-card" color ="secondary">
+          <ion-card-header>
+            <ion-card-subtitle>Sioned Naylor</ion-card-subtitle>
+            <ion-card-title>What do you wish you knew more about?</ion-card-title>
+          </ion-card-header>
+          <ion-img src='https://pmcvariety.files.wordpress.com/2018/03/facebook-logo-10.jpg?w=1000'></ion-img>
+          <ion-card-content>
+            <p>This is raddit</p>
+          </ion-card-content>
+        </ion-card> 
+        <ion-card class="welcome-card" color ="secondary">
+            <ion-card-header>
+              <ion-card-subtitle>Gaia Trejo</ion-card-subtitle>
+              <ion-card-title>What are some small things that make your day better?</ion-card-title>
+            </ion-card-header>
+            <ion-img src='https://www.lowyat.net/wp-content/uploads/2016/08/Facebook-Mark-Zuckerberg.jpg'></ion-img>
+            <ion-card-content>
+              <p>This is raddit</p>
+            </ion-card-content>
+          </ion-card> 
+          <ion-card class="welcome-card" color ="secondary">
+              <ion-card-header>
+                <ion-card-subtitle>Jana Wagner</ion-card-subtitle>
+                <ion-card-title>What shows are you into?</ion-card-title>
+              </ion-card-header>
+              <ion-img src='https://pmcvariety.files.wordpress.com/2018/03/facebook-logo-9.jpg?w=1000'></ion-img>
+              <ion-card-content>
+                <p>This is raddit</p>
+              </ion-card-content>
+            </ion-card>
+</ion-content>

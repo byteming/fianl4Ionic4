@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color = "primary">
+    <ion-title>
+      Instatram Feed
+    </ion-title>
+    <ion-searchbar animated [(ngModel)]="keyword" (ngModelChange)="onKeyworkChange($event)"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding scroll="false" class="has-header" color="secondary">
+    <ion-spinner *ngIf ="persons == null"></ion-spinner>
+   <ion-card *ngFor ="let person of persons" (click) = "openDetail(person)">
+      
+     <ion-img [src] ="person.picture.large" ></ion-img>
+     <ion-card-header>
+       <ion-card-title><ion-icon name="contact"></ion-icon>   {{person.name.title}} {{person.name.first}} {{person.name.last}}</ion-card-title>
+      </ion-card-header>
+  
+      <ion-card-content>
+        <p><ion-icon name="call"></ion-icon>  {{person.phone}}</p>
+        <p><ion-icon name="eye"></ion-icon><ion-icon name="eye-off"></ion-icon></p>
+      </ion-card-content>
+   </ion-card>
+   
+  </ion-content >
